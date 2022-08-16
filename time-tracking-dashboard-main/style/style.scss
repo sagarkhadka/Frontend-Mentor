@@ -1,0 +1,114 @@
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+// Font Variable
+$font: 'Outfit';
+
+// Colors
+$Blue: hsl(246, 80%, 60%);
+$Lightred: hsl(15, 100%, 70%); // work
+$Softblue: hsl(195, 74%, 62%); // play
+$Lightpink: hsl(348, 100%, 68%); // study
+$Limegreen: hsl(145, 58%, 55%); //exercise
+$Violet: hsl(264, 64%, 52%); // social
+$softorange: hsl(43, 84%, 65%); // self care
+$Verydarkblue: hsl(226, 43%, 10%);
+$Darkblue: hsl(235, 46%, 20%);
+$Desaturatedblue: hsl(235, 45%, 61%);
+$PaleBlue: hsl(236, 100%, 87%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+body {
+    background-color: $Verydarkblue;
+}
+
+.tracking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh;
+    .report {
+        background-color: $Darkblue;
+        // padding: 2rem;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .title {
+        background-color: $Blue;
+        border-radius: 10px;
+        padding: 2rem 0 4rem 2rem;
+        width: 13rem;
+    }
+    .img>img {
+        height: 60px;
+        margin-bottom: 24px;
+        border: 3px solid white;
+        border-radius: 50%;
+    }
+    .name>span {
+        color: $PaleBlue;
+        font-weight: 300;
+    }
+    .name>h1 {
+        color: white;
+        font-weight: 300;
+    }
+    .filter {
+        margin-bottom: 1.3rem;
+    }
+    .filter>span {
+        display: flex;
+        color: $PaleBlue;
+        font-weight: 300;
+        padding: 1rem 1rem 0 1rem;
+    }
+    .filter>span.active {
+        color: white;
+    }
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: repeat(3, 13rem);
+    grid-auto-rows: 200px;
+    .card {
+        background-color: $Darkblue;
+    }
+}
+
+.work {
+    background-color: $Lightred;
+    border-radius: 10px;
+}
+
+.play {
+    background-color: $Softblue;
+    border-radius: 10px;
+}
+
+.study {
+    background-color: $Lightred;
+    border-radius: 10px;
+}
+
+.exercise {
+    background-color: $Limegreen;
+    border-radius: 10px;
+}
+
+.social {
+    background-color: $Violet;
+    border-radius: 10px;
+}
+
+.selfcare {
+    background-color: $softorange;
+    border-radius: 10px;
+}
